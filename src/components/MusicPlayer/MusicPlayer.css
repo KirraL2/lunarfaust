@@ -1,0 +1,82 @@
+/* MusicPlayer.css */
+.music-player {
+  position: relative;
+  z-index: 1000;
+}
+
+.music-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.music-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.music-toggle:active {
+  transform: translateY(0);
+}
+
+.music-icon {
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.music-toggle.muted .music-icon {
+  transform: scale(0.9);
+}
+
+.music-label {
+  white-space: nowrap;
+}
+
+/* Mobile specific styles */
+@media (max-width: 768px) {
+  .music-toggle {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    gap: 6px;
+  }
+}
+
+/* Extra small devices - icon only */
+@media (max-width: 480px) {
+  .music-toggle {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .music-label {
+    display: none;
+  }
+  
+  .music-icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animation for sound state change */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.music-toggle:not(.muted) .music-icon {
+  animation: pulse 1.5s infinite;
+}

@@ -1,0 +1,23 @@
+/* Add to Navbar.css */
+.navbar {
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    gap: 10px;
+  }
+  
+  /* Ensure last nav item has spacing */
+  .navbar li:last-child {
+    margin-right: 15px;
+  }
+}

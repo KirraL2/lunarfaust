@@ -1,0 +1,153 @@
+/* Main section styling */
+.animated-bg-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  color: white;
+  z-index: 0;
+}
+
+.bg-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  /* Remove background animation from img element */
+}
+
+/* Add pan animation to a pseudo-element instead */
+.animated-bg-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/public/assets/cassie.gif') center/cover no-repeat;
+  z-index: -3;
+  animation: bgPan 30s linear infinite alternate;
+}
+
+@keyframes bgPan {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Overlay for better text readability */
+.bg-gif-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Darker overlay for better mobile contrast */
+  z-index: -1;
+}
+
+/* Content styling */
+.animated-content {
+  text-align: center;
+  padding: 20px;
+  max-width: 90%; /* Better mobile width */
+  margin: 0 auto;
+}
+
+/* Cool font styling */
+.cool-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(3rem, 10vw, 6rem); /* Fluid typography */
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+.cool-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Fluid typography */
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+/* Text animation */
+@keyframes textGlow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 
+                 0 0 25px rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animated-bg-section {
+    height: 90vh; /* Slightly shorter on mobile */
+    min-height: 500px;
+  }
+
+  .animated-bg-section::before {
+    animation: none; /* Disable pan animation on mobile */
+    background-attachment: scroll; /* Better mobile performance */
+  }
+
+  .cool-title {
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+
+  .cool-subtitle {
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Small mobile devices (portrait) */
+@media (max-width: 480px) {
+  .animated-bg-section {
+    min-height: 400px;
+  }
+
+  .cool-title {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .cool-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* Landscape mobile optimization */
+@media (max-height: 500px) and (orientation: landscape) {
+  .animated-bg-section {
+    height: auto;
+    padding: 40px 0;
+  }
+  
+  .cool-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cool-subtitle {
+    font-size: 1rem;
+  }
+}
