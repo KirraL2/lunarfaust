@@ -3,12 +3,13 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   height: 50px;
-  width: 100%;
+  max-width: auto;
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(8px);
-  padding: 8px 12px; /* Reduced padding */
   z-index: 1000;
+  padding: 0.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
