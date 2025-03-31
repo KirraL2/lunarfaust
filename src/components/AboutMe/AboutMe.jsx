@@ -8,7 +8,7 @@ const AboutMe = () => {
         <div className="about-image">
           <div className="image-wrapper">
             {/* Replace with your actual image */}
-            <img src="/assets/avi.png" alt="Profile" className='floating-image'/>
+            <img src="/assets/avi.jpg" alt="Profile" className='floating-image'/>
           </div>
         </div>
         <div className="about-content">

@@ -14,6 +14,18 @@ const gachaGames = [
     name: "Honkai: Star Rail",
     image: "assets/cass.jpg",
   },
+  {
+    name: "Zenless Zone Zero",
+    image: "assets/miyabi.jpeg",
+  },
+  {
+    name: "Wuthering Waves",
+    image: "assets/carlotta.jpeg",
+  },
+  {
+    name: "Valorant",
+    image: "assets/iso.jpeg",
+  },
   
 ];
 
