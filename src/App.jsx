@@ -76,7 +76,8 @@ function App() {
       
       <AnimatedBackgroundSection id="introduction" />
       <AboutMe id="about" />
-      <GachaGamesSection id="gacha"/>
+      <div id="games">
+      <GachaGamesSection/></div>
     </div>
   );
 }

@@ -8,6 +8,7 @@ const Navbar = () => {
       <ul>
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#games">Fave Games</a></li>
       </ul>
     </nav>
   );
