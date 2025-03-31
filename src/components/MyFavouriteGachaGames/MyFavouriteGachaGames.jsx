@@ -4,11 +4,11 @@ import './MyFavouriteGachaGames.css';
 const gachaGames = [
     {
     name: "Genshin Impact",
-    image: "public/assets/mizuki.jpg",
+    image: "assets/mizuki.jpg",
     },
   {
     name: "Arknights",
-    image: "public/assets/skadi.jpg",
+    image: "assets/skadi.jpg",
   },
   {
     name: "Honkai: Star Rail",
