@@ -1,6 +1,6 @@
 /* Add to Navbar.css */
 .navbar {
-  position: relative;
+  position: sticky;
   z-index: 1000;
 }
 

@@ -4,6 +4,7 @@ import MusicPlayer from './components/MusicPlayer/MusicPlayer';
 import AboutMe from './components/AboutMe/AboutMe';
 import AnimatedBackgroundSection from './components/Introduction/Introduction1';
 import './App.css';
+import GachaGamesSection from './components/MyFavouriteGachaGames/MyFavouriteGachaGames';
 
 function App() {
   const [isMuted, setIsMuted] = useState(true);
@@ -75,6 +76,7 @@ function App() {
       
       <AnimatedBackgroundSection id="introduction" />
       <AboutMe id="about" />
+      <GachaGamesSection id="gacha"/>
     </div>
   );
 }

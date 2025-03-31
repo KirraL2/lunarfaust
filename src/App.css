@@ -17,12 +17,11 @@ body {
 /* Main container */
 .container {
   width: 100%;
-  position: relative;
-  padding-top: 60px; /* Space for fixed top-bar */
+  position: relative; /* Space for fixed top-bar */
 }
 
 .top-bar {
-  position: fixed;
+  position: sticky;  /* Changed from fixed to sticky */
   top: 0;
   left: 0;
   right: 0;
@@ -30,6 +29,10 @@ body {
   z-index: 1000;
   display: flex;
   justify-content: space-between;
+  align-items: center;  /* Better vertical alignment */
+  background: rgba(0, 0, 0, 0.8);  /* Semi-transparent background */
+  backdrop-filter: blur(10px);  /* Frosted glass effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);  /* Subtle bottom border */
 }
 
 /* Navbar styles */
@@ -51,15 +54,10 @@ body {
 }
 
 .navbar a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 25, 0.1);
   transform: translateY(-2px);
 }
 
-.music-player {
-  position: relative; /* Change from fixed */
-  z-index: 1001;
-  margin-left: auto; /* Pushes to far right */
-}
 /* Music player styles */
 .music-player button {
   background: rgba(255, 255, 255, 0.1);

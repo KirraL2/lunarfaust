@@ -32,7 +32,7 @@ const AboutMe = () => {
               <li>HTML/CSS</li>
               <li>Node.js</li>
               <li>Responsive Design</li>
-              <li>DeepSeek Brotha</li>
+              <li>DeepSeek</li>
             </ul>
           </div>
         </div>

@@ -1,0 +1,50 @@
+.gacha-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .gacha-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gacha-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .gacha-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gacha-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gacha-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .gacha-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
