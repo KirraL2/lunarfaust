@@ -63,7 +63,7 @@ const Navbar = () => {
         <ul>
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#about">About Me</a></li>
-          <li><a href="#games">Fave Games</a></li>
+          <li><a href="#games">Fave Stuff</a></li>
         </ul>
         <div className="music-player-container">
           <MusicPlayer isMuted={isMuted} toggleMute={toggleMute} />

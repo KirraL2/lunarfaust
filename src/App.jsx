@@ -3,6 +3,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import AnimatedBackgroundSection from './components/Introduction/Introduction1';
 import './App.css';
 import GachaGamesSection from './components/MyFavouriteGachaGames/MyFavouriteGachaGames';
+import FaveAnimes from './components/FaveAnimes/FaveAnimes';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutMe id="about" />
       <div id="games">
         <GachaGamesSection />
+        <FaveAnimes />
       </div>
     </div>
   );
