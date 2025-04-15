@@ -7,7 +7,7 @@ function Wikisth() {
     {
       id: 1,
       name: "Faust",
-      image: "/public/assets/wiki/Faust.png",
+      image: "/assets/wiki/Faust.png",
       shortDesc: "The Egoist",
       category: "ME!"
     },
@@ -21,21 +21,21 @@ function Wikisth() {
     {
       id: 3,
       name: "Brick || Kyriaki",
-      image: "/public/assets/wiki/Brick1.jpg",
+      image: "/assets/wiki/Brick1.jpg",
       shortDesc: "Bwicc",
       category: "Friends"
     },
     {
       id: 4,
       name: "AbysSsian",
-      image: "/public/assets/wiki/abyss.png",
+      image: "/assets/wiki/abyss.png",
       shortDesc: "Website Contributor",
       category: "Friends"
     },
     {
       id: 5,
       name: "Kimo",
-      image: "/public/assets/wiki/kimo.jpg",
+      image: "/assets/wiki/kimo.jpg",
       shortDesc: "The Mother",
       category: "Friends"
     }

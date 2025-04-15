@@ -10,7 +10,7 @@ const characterDatabase = {
         aliases: ["lunar - Me"],
         description: "She's sometimes rational, sometimes loses it, sometimes smart and sometimes really good at games.",
         images: [
-          "/public/assets/wiki/Faust.png"
+          "/assets/wiki/Faust.png"
         ],
         abilities: [
           { name: "Direct Shot", description: "This is MY goal!" }
@@ -50,9 +50,9 @@ const characterDatabase = {
     aliases: ["“Brick” - Everyone", "Hunter", "Bricc"],
     description: "𝓑𝓡𝓘𝓒𝓚 // Likes Sunday",
     images: [
-      "/public/assets/wiki/Brick1.jpg",
-      "/public/assets/wiki/Brick2.png",
-      "/public/assets/wiki/Brick3.png"
+      "/assets/wiki/Brick1.jpg",
+      "/assets/wiki/Brick2.png",
+      "/assets/wiki/Brick3.png"
     ],
     abilities: [
       { name: "“Bless you.”", description: "Advances the buffed character forward." }
@@ -71,8 +71,8 @@ const characterDatabase = {
     aliases: ["Abyss"],
     description: "Gamer, Artist, Graphic Designer and Programmer.",
     images: [
-      "/public/assets/wiki/abyss.png",
-      "/public/assets/wiki/abyss2.png"
+      "/assets/wiki/abyss.png",
+      "/assets/wiki/abyss2.png"
     ],
     abilities: [
       { name: "Dark Abyssal Forces", description: "PsychoTelekinesis basically" }
@@ -90,7 +90,7 @@ const characterDatabase = {
     aliases: ["Kimomo", "“Mother” - Faust"],
     description: "Nephis Mom",
     images: [
-      "/public/assets/wiki/kimo.jpg",
+      "/assets/wiki/kimo.jpg",
     ],
     abilities: [
       { name: "Sorcery of Names", description: "Shaping." }
