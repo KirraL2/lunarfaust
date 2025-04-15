@@ -1,0 +1,591 @@
+/* Wiki Front Page Styles */
+.wiki-front-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background-color: #f9f9f9;
+  }
+  
+  .wiki-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #0066cc;
+    margin-bottom: 30px;
+  }
+  
+  .wiki-logo h1 {
+    color: #0066cc;
+    margin: 0;
+    font-size: 2.2em;
+  }
+  
+  .wiki-logo p {
+    margin: 5px 0 0;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .search-box {
+    display: flex;
+  }
+  
+  .search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 250px;
+  }
+  
+  .search-box button {
+    padding: 8px 15px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .welcome-banner {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .welcome-text h2 {
+    margin-top: 0;
+    color: #004080;
+  }
+  
+  .wiki-stats {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-number {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0066cc;
+  }
+  
+  .stat-label {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .section-title {
+    color: #004080;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  .character-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .character-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .character-image-container {
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .character-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .character-card:hover .character-image {
+    transform: scale(1.05);
+  }
+  
+  .character-info {
+    padding: 15px;
+  }
+  
+  .character-name {
+    margin: 0 0 10px;
+    color: #0066cc;
+  }
+  
+  .character-desc {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .recent-updates {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+  }
+  
+  .update-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .update-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .wiki-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  /* Character Page Styles */
+  .character-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background-color: #f9f9f9;
+  }
+  
+  .character-header {
+    margin-bottom: 30px;
+  }
+  
+  .breadcrumbs {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumbs a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .character-header h1 {
+    color: #0066cc;
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .character-header h2 {
+    margin: 5px 0 0;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  .character-layout {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .character-sidebar {
+    flex: 0 0 300px;
+  }
+  
+  .character-portrait {
+    margin-bottom: 20px;
+  }
+  
+  .character-portrait img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .quick-facts {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .quick-facts h3 {
+    margin-top: 0;
+    color: #004080;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .fact-group {
+    margin-bottom: 15px;
+  }
+  
+  .fact-group h4 {
+    margin: 0 0 5px;
+    color: #0066cc;
+    font-size: 1em;
+  }
+  
+  .fact-group ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .fact-group li {
+    margin-bottom: 5px;
+  }
+  
+  .character-main {
+    flex: 1;
+  }
+  
+  .character-bio, .character-relationships, .character-gallery, .character-trivia {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .character-bio h2, .character-relationships h2, 
+  .character-gallery h2, .character-trivia h2 {
+    margin-top: 0;
+    color: #004080;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  th {
+    background-color: #f5f5f5;
+    color: #004080;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .gallery-item {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  .character-trivia ul {
+    padding-left: 20px;
+  }
+  
+  .character-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #004d99;
+  }
+  
+  .character-not-found {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .relationship-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  .relationship-link:hover {
+    color: #004080;
+    text-decoration: underline;
+  }
+
+  /* Search specific styles */
+.no-results {
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .no-results-message {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  }
+  
+  .no-results-message button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .no-results-message button:hover {
+    background-color: #004d99;
+  }
+  
+  .audio-player-section {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+  }
+  
+  .audio-player-section h3 {
+    margin-top: 0;
+    color: #004080;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .character-audio {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .no-audio {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  /* Make audio player responsive */
+
+
+  /* Mobile responsive search */
+
+  /* Existing CSS remains the same until the end */
+
+/* ==================== */
+/* MOBILE RESPONSIVENESS */
+/* ==================== */
+
+@media (max-width: 768px) {
+    /* Front Page Mobile Styles */
+
+    .audio-player-section {
+        margin-top: 15px;
+      }
+      
+      .character-audio {
+        min-width: 250px;
+      }
+    
+    .wiki-header {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .search-box {
+      width: 100%;
+    }
+  
+    .search-box input {
+      width: 100%;
+    }
+  
+    .welcome-banner {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .wiki-stats {
+      justify-content: center;
+    }
+  
+    .character-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+    }
+  
+    .character-image-container {
+      height: 180px;
+    }
+  
+    /* Character Page Mobile Styles */
+    .character-layout {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .character-sidebar {
+      flex: 1;
+      width: 100%;
+    }
+  
+    .character-header h1 {
+      font-size: 1.8em;
+    }
+  
+    .character-header h2 {
+      font-size: 1.2em;
+    }
+  
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .gallery-item {
+      height: 150px;
+    }
+  
+    .character-footer {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .search-box {
+        width: 100%;
+      }
+      
+      .search-box input {
+        width: 100%;
+      }
+    
+  }
+  
+  @media (max-width: 480px) {
+    /* Extra small devices */
+    .wiki-front-page,
+    .character-page {
+      padding: 15px;
+    }
+  
+    .wiki-logo h1 {
+      font-size: 1.8em;
+    }
+  
+    .character-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .character-image-container {
+      height: 150px;
+    }
+  
+    .character-info {
+      padding: 10px;
+    }
+  
+    .character-name {
+      font-size: 1em;
+    }
+  
+    .character-desc {
+      font-size: 0.8em;
+    }
+  
+    .section-title {
+      font-size: 1.2em;
+    }
+  
+    .quick-facts {
+      padding: 10px;
+    }
+  
+    .character-bio, 
+    .character-relationships, 
+    .character-gallery, 
+    .character-trivia {
+      padding: 15px;
+    }
+  
+    th, td {
+      padding: 6px 8px;
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Existing .relationship-link styles remain at the end */

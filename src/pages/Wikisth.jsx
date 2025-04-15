@@ -1,0 +1,156 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './WikiStyles.css';
+
+function Wikisth() {
+  const allCharacters = [
+    {
+      id: 1,
+      name: "Faust",
+      image: "/public/assets/wiki/Faust.png",
+      shortDesc: "The Egoist",
+      category: "ME!"
+    },
+    {
+      id: 2,
+      name: "Doge",
+      image: "https://cdn.discordapp.com/attachments/672014333609377837/1361637194430681348/21a9ba5970036c4981a9981949060c61.jpg?ex=67ff7af5&is=67fe2975&hm=3ec3745aee25c537de2496b0ef7e76448a7e7984d89de6ebb9a9d508c0cb43d3&",
+      shortDesc: "My IRL Friend !",
+      category: "Friends"
+    },
+    {
+      id: 3,
+      name: "Brick || Kyriaki",
+      image: "/public/assets/wiki/Brick1.jpg",
+      shortDesc: "Bwicc",
+      category: "Friends"
+    },
+    {
+      id: 4,
+      name: "AbysSsian",
+      image: "/public/assets/wiki/abyss.png",
+      shortDesc: "Website Contributor",
+      category: "Friends"
+    },
+    {
+      id: 5,
+      name: "Kimo",
+      image: "/public/assets/wiki/kimo.jpg",
+      shortDesc: "The Mother",
+      category: "Friends"
+    }
+  ];
+
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  // Filter characters based on search term
+  const filteredCharacters = allCharacters.filter(character =>
+    character.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    character.shortDesc.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  // Group filtered characters by category
+  const charactersByCategory = filteredCharacters.reduce((acc, character) => {
+    if (!acc[character.category]) {
+      acc[character.category] = [];
+    }
+    acc[character.category].push(character);
+    return acc;
+  }, {});
+
+  const handleSearch = (e) => {
+    e.preventDefault(); // Prevent form submission reload
+    // Filtering happens automatically through state change
+  };
+
+  return (
+    <div className="wiki-front-page">
+      <header className="wiki-header">
+        <div className="wiki-logo">
+          <h1>Faust's Friends! (WIP)</h1>
+          <p>(Mostly RP friends but shh)</p>
+        </div>
+        <form className="search-box" onSubmit={handleSearch}>
+          <input 
+            type="text" 
+            placeholder="Search the wiki..." 
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <button type="submit">Search</button>
+        </form>
+      </header>
+
+      <main className="wiki-main-content">
+        <section className="welcome-banner">
+          <div className="welcome-text">
+            <h2>Welcome to my personal Wiki-like page!!</h2>
+            <p>Explore everything about me and my friends!</p>
+          </div>
+          <div className="wiki-stats">
+            <div className="stat-item">
+              <span className="stat-number">{allCharacters.length}</span>
+              <span className="stat-label">Characters</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">A lot</span>
+              <span className="stat-label">Discord-verse</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">40+</span>
+              <span className="stat-label">My Personal OCs</span>
+            </div>
+          </div>
+        </section>
+
+        {filteredCharacters.length === 0 && searchTerm ? (
+          <div className="no-results-message">
+            <h3>No characters found matching "{searchTerm}"</h3>
+            <button onClick={() => setSearchTerm('')}>Clear search</button>
+          </div>
+        ) : (
+          <>
+            {Object.entries(charactersByCategory).map(([category, characters]) => (
+              <section key={category} className="character-section">
+                <h2 className="section-title">{category}</h2>
+                {characters.length > 0 ? (
+                  <div className="character-grid">
+                    {characters.map(character => (
+                      <Link to={`/character/${character.id}`} key={character.id} className="character-card">
+                        <div className="character-image-container">
+                          <img src={character.image} alt={character.name} className="character-image" />
+                        </div>
+                        <div className="character-info">
+                          <h3 className="character-name">{character.name}</h3>
+                          <p className="character-desc">{character.shortDesc}</p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="no-results">No characters found in this category</p>
+                )}
+              </section>
+            ))}
+
+            <section className="recent-updates">
+              <h2 className="section-title">Recent Updates</h2>
+              <ul className="update-list">
+                <li>Added Faust, Doge, AbysSsian, Kimo and Brick (April 15, 2025)</li>
+                <li>Started Developing the Wiki-like webpage (April 15, 2025)</li>
+              </ul>
+            </section>
+          </>
+        )}
+      </main>
+
+      <footer className="wiki-footer">
+        <p>© {new Date().getFullYear()} Made by Lunar.Faust!</p>
+        <div className="footer-links">
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default Wikisth;
