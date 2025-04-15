@@ -109,8 +109,8 @@ function CharacterPage() {
   const character = characterDatabase[id];
 
   const characterAudio = {
-    1: "/public/assets/sounds/faust-theme.mp3",
-    4: "/public/assets/sounds/abyss-theme.mp3"
+    1: "/assets/sounds/faust-theme.mp3",
+    4: "/assets/sounds/abyss-theme.mp3"
   };
 
   if (!character) {
