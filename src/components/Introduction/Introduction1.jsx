@@ -7,7 +7,7 @@ const AnimatedBackgroundSection = ({ id }) => {
       <div className="bg-gif-overlay"></div>
       <div className="animated-content">
         <h1 className="cool-title">Lunar.Faust</h1>
-        <p className="cool-subtitle">Former Highschool Student (soon)</p>
+        <p className="cool-subtitle">Former Highschool Student</p>
       </div>
     </section>
   );
