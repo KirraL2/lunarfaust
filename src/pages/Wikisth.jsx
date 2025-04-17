@@ -14,7 +14,7 @@ function Wikisth() {
     {
       id: 2,
       name: "Doge",
-      image: "https://cdn.discordapp.com/attachments/672014333609377837/1361637194430681348/21a9ba5970036c4981a9981949060c61.jpg?ex=67ff7af5&is=67fe2975&hm=3ec3745aee25c537de2496b0ef7e76448a7e7984d89de6ebb9a9d508c0cb43d3&",
+      image: "/assets/wiki/doge.jpg",
       shortDesc: "My IRL Friend !",
       category: "Friends"
     },

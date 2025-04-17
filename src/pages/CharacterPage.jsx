@@ -30,8 +30,8 @@ const characterDatabase = {
     aliases: ["Dog - Kuro", "STUPID DOG - Shinko", "STOP THROWI- - Me"],
     description: "Faust's very own IRL friend and a genuinely funny doge.",
     images: [
-      "https://cdn.discordapp.com/attachments/672014333609377837/1361637194430681348/21a9ba5970036c4981a9981949060c61.jpg?ex=67ff7af5&is=67fe2975&hm=3ec3745aee25c537de2496b0ef7e76448a7e7984d89de6ebb9a9d508c0cb43d3&",
-      "https://cdn.discordapp.com/attachments/672014333609377837/1361635619616460800/Screenshot_2025-04-15_173321.png?ex=67ff797d&is=67fe27fd&hm=fcbd695c98694171ab0e6d596a0208d0db93b5030e34267ca69fc9b9b59f8400&"
+      "/assets/wiki/doge.jpg",
+      "/assets/wiki/doge2.png"
     ],
     abilities: [
       { name: "“HELP ME!”", description: "1st Secret Doge Technique" },
