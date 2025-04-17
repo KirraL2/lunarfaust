@@ -18,7 +18,8 @@ const characterDatabase = {
         relationships: [
           { name: "Doge", id: 2, relation: "Brother", status: "Rivals" },
           { name: "Brick", id: 3, relation: "Friends", status: "Happi" },
-          { name: "AbysSsian", id: 4, relation: "Friends", status: "Happi" }
+          { name: "AbysSsian", id: 4, relation: "Friends", status: "Happi" },
+          { name: "Kimo", id: 5, relation: "Mother", status: "Considerable" }
         ],
         trivia: [
           "She might be the Seer."
