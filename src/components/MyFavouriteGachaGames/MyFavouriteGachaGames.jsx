@@ -58,6 +58,14 @@ const gachaGames = [
     genre: "Tactical FPS",
     description: "Character-based tactical shooter with unique abilities"
   },
+  {
+    name: "Umamusume",
+    image: "/assets/sgfamily.jpg",
+    developer: "CyGames",
+    release: "2021",
+    genre: "Uma Training",
+    description: "YOU TRAIN HORSES!!"
+  },
 ];
 
 const GachaGamesSection = () => {
