@@ -10,16 +10,19 @@ const characterDatabase = {
         aliases: ["lunar - Me"],
         description: "She's sometimes rational, sometimes loses it, sometimes smart and sometimes really good at games.",
         images: [
-          "/assets/wiki/Faust.png"
+          "/assets/wiki/Faust2.jpg"
         ],
         abilities: [
           { name: "Direct Shot", description: "This is MY goal!" }
         ],
         relationships: [
-          { name: "Doge", id: 2, relation: "Brother", status: "Rivals" },
+          { name: "Doge", id: 2, relation: "Sibling", status: "Rivals" },
           { name: "Brick", id: 3, relation: "Friends", status: "Happi" },
           { name: "AbysSsian", id: 4, relation: "Friends", status: "Happi" },
-          { name: "Kimo", id: 5, relation: "Mother", status: "Considerable" }
+          { name: "Kimo", id: 5, relation: "Mother", status: "Considerable" },
+          { name: "Gabby", id: 6, relation: "Habu", status: "Yippee" },
+          { name: "Ryu", id: 7, relation: "Friends", status: "Happi" },
+          { name: "Kuro", id: 8, relation: "Sibling", status: "Happi" }
         ],
         trivia: [
           "She might be the Seer."
@@ -101,6 +104,60 @@ const characterDatabase = {
     ],
     trivia: [
       "MOM"
+    ]
+  },
+  6: {
+    name: "Gabby The Kind",
+    fullTitle: "The Wrought Iron Hero",
+    aliases: ["Gabs", "Gabibi” - Faust"],
+    description: "The Gabs",
+    images: [
+      "/assets/wiki/gabs.png",
+    ],
+    abilities: [
+      { name: "Trace On", description: "Creation." }
+    ],
+    relationships: [
+      { name: "Faust", id: 1, relation: "Wafu", status: "Yippee" }
+    ],
+    trivia: [
+      "People die when they are killed."
+    ]
+  },
+  7: {
+    name: "Ryu",
+    fullTitle: "The Writer",
+    aliases: ["Ryuu", "Ryo"],
+    description: "LP Creator",
+    images: [
+      "/assets/wiki/Ryu.jpg",
+    ],
+    abilities: [
+      { name: "Zen", description: "Anything they write comes to reality." }
+    ],
+    relationships: [
+      { name: "Faust", id: 1, relation: "Friend", status: "Happee" }
+    ],
+    trivia: [
+      "Writes peak until they don't"
+    ]
+  },
+  8: {
+    name: "Haru",
+    fullTitle: "The Ponderer",
+    aliases: ["Kuro - Faust", "Haru", "Yuki"],
+    description: "Peacemaker/OG",
+    images: [
+      "/assets/wiki/kuro.jpg",
+    ],
+    abilities: [
+      { name: "Shukai", description: "The full release of his zanpakuto." }
+    ],
+    relationships: [
+      { name: "Faust", id: 1, relation: "Sibling", status: "Happee" }
+    ],
+    trivia: [
+      "Likes Bleach"
     ]
   }
 };

@@ -7,9 +7,16 @@ function Wikisth() {
     {
       id: 1,
       name: "Faust",
-      image: "/assets/wiki/Faust.png",
+      image: "/assets/wiki/Faust2.jpg",
       shortDesc: "The Egoist",
       category: "ME!"
+    },
+    {
+      id: 6,
+      name: "Gabby",
+      image: "/assets/wiki/gabs.png",
+      shortDesc: "Wrought Iron",
+      category: "The GABS Section"
     },
     {
       id: 2,
@@ -37,6 +44,20 @@ function Wikisth() {
       name: "Kimo",
       image: "/assets/wiki/kimo.jpg",
       shortDesc: "The Mother",
+      category: "Friends"
+    },
+    {
+      id: 7,
+      name: "Ryu",
+      image: "/assets/wiki/Ryu.jpg",
+      shortDesc: "The Writer",
+      category: "Friends"
+    },
+    {
+      id: 8,
+      name: "Haru",
+      image: "/assets/wiki/kuro.jpg",
+      shortDesc: "The Ponderer",
       category: "Friends"
     }
   ];
@@ -136,6 +157,7 @@ function Wikisth() {
             <section className="recent-updates">
               <h2 className="section-title">Recent Updates</h2>
               <ul className="update-list">
+                <li>Updated Faust profile, added Gabs, Ryu, and Kuro(Haru) (September 12, 2025)</li>
                 <li>Added Faust, Doge, AbysSsian, Kimo and Brick (April 15, 2025)</li>
                 <li>Started Developing the Wiki-like webpage (April 15, 2025)</li>
               </ul>
