@@ -109,13 +109,14 @@ const characterDatabase = {
   6: {
     name: "Gabby The Kind",
     fullTitle: "The Wrought Iron Hero",
-    aliases: ["Gabs", "Gabibi” - Faust"],
-    description: "The Gabs",
+    aliases: ["Gabs", "“Gabibi” - Faust", "“Gabby” - Everyone", "“Gabberone” - Friends"],
+    description: "Overworked salary man, met an auspicious set of people when trying to find a release.",
     images: [
       "/assets/wiki/gabs.png",
     ],
     abilities: [
-      { name: "Trace On", description: "Creation." }
+      { name: "Trace On", description: "Creation." },
+      { name: "Househusband", description: "Can and will clean." }
     ],
     relationships: [
       { name: "Faust", id: 1, relation: "Wafu", status: "Yippee" }
@@ -168,7 +169,8 @@ function CharacterPage() {
 
   const characterAudio = {
     1: "/assets/sounds/faust-theme.mp3",
-    4: "/assets/sounds/abyss-theme.mp3"
+    4: "/assets/sounds/abyss-theme.mp3",
+    6: "/assets/sounds/gab-theme.mp3"
   };
 
   if (!character) {
