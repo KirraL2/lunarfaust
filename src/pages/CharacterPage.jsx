@@ -42,7 +42,7 @@ const characterDatabase = {
       { name: "“I'm Out!”", description: "2nd Secret Doge Technique" }
     ],
     relationships: [
-      { name: "Faust", id: 1, relation: "Sister", status: "Rivals" }
+      { name: "Faust", id: 1, relation: "Sibling", status: "Rivals" }
     ],
     trivia: [
       "He's 19 but he sounds like an anime girl"
