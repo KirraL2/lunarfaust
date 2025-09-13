@@ -160,6 +160,28 @@ const characterDatabase = {
     trivia: [
       "Likes Bleach"
     ]
+  },
+  9: {
+    name: "Ethan",
+    fullTitle: "The True Narrator",
+    aliases: ["DUMBASS", "NIG-", "Wendigo"],
+    description: "A narrator has no need to describe one’s self, for a narrator is not the main character",
+    images: [
+      "/assets/wiki/ethan.jpg"
+    ],
+    abilities: [
+      { name: "Written reality", description: "A narrator writes land speaks, thus, rolls reality forward like a tape. What is always true, is what a narrator speaks. So true are my words that become reality." }
+    ],
+    relationships: [
+      { name: "Yuki", id: 8, relation: "Mokey", status: "Yes" }
+    ],
+    trivia: [
+      "Bing chilling."
+    ],
+    extra: [
+      "He gave me a scuffed image - Faust", 
+      "I suggest we put Ethan in the Iron Maiden and give him a trip to India - Gabby"
+    ]
   }
 };
 
@@ -281,6 +303,17 @@ function CharacterPage() {
               <h2>Trivia</h2>
               <ul>
                 {character.trivia.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {character.extra && (
+            <section className="character-extra">
+              <h2>Extra</h2>
+              <ul>
+                {character.extra.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>

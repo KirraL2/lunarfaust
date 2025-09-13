@@ -59,6 +59,13 @@ function Wikisth() {
       image: "/assets/wiki/kuro.jpg",
       shortDesc: "The Ponderer",
       category: "Friends"
+    },
+    {
+      id: 9,
+      name: "Ethan",
+      image: "/assets/wiki/ethan.jpg",
+      shortDesc: "The Narrator",
+      category: "Friends"
     }
   ];
 
@@ -157,6 +164,7 @@ function Wikisth() {
             <section className="recent-updates">
               <h2 className="section-title">Recent Updates</h2>
               <ul className="update-list">
+                <li>Updated Faust theme, added Ethan (September 13, 2025)</li>
                 <li>Updated Faust profile, added Gabs, Ryu, and Kuro(Haru) (September 12, 2025)</li>
                 <li>Added Faust, Doge, AbysSsian, Kimo and Brick (April 15, 2025)</li>
                 <li>Started Developing the Wiki-like webpage (April 15, 2025)</li>

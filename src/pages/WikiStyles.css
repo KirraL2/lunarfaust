@@ -273,7 +273,7 @@
     flex: 1;
   }
   
-  .character-bio, .character-relationships, .character-gallery, .character-trivia {
+  .character-bio, .character-relationships, .character-gallery, .character-trivia, .character-extra {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -282,7 +282,7 @@
   }
   
   .character-bio h2, .character-relationships h2, 
-  .character-gallery h2, .character-trivia h2 {
+  .character-gallery h2, .character-trivia h2, .character-extra h2 {
     margin-top: 0;
     color: #004080;
     border-bottom: 1px solid #eee;
@@ -331,6 +331,10 @@
   }
   
   .character-trivia ul {
+    padding-left: 20px;
+  }
+
+  .character-extra ul {
     padding-left: 20px;
   }
   
@@ -578,7 +582,8 @@
     .character-bio, 
     .character-relationships, 
     .character-gallery, 
-    .character-trivia {
+    .character-trivia,
+    .character-extra {
       padding: 15px;
     }
   
