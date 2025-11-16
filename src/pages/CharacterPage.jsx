@@ -31,8 +31,8 @@ const characterDatabase = {
   2: {
     name: "Doge",
     fullTitle: "He's a very funny and sometimes auti-",
-    aliases: ["Dog - Kuro", "STUPID DOG - Shinko", "STOP THROWI- - Me"],
-    description: "Faust's very own IRL friend and a genuinely funny doge.",
+    aliases: ["Dog - Kuro", "STUPID DOG - Shinko", "STOP THROWING - Me"],
+    description: "Faust's very own IRL Brother and a genuinely funny doge.",
     images: [
       "/assets/wiki/doge.jpg",
       "/assets/wiki/doge2.png"
@@ -42,7 +42,7 @@ const characterDatabase = {
       { name: "“I'm Out!”", description: "2nd Secret Doge Technique" }
     ],
     relationships: [
-      { name: "Faust", id: 1, relation: "Sibling", status: "Rivals" }
+      { name: "Faust", id: 1, relation: "Siblings", status: "Rivals" }
     ],
     trivia: [
       "He's 19 but he sounds like an anime girl"
