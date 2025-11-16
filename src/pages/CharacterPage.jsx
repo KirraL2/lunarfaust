@@ -39,7 +39,8 @@ const characterDatabase = {
     ],
     abilities: [
       { name: "“HELP ME!”", description: "1st Secret Doge Technique" },
-      { name: "“I'm Out!”", description: "2nd Secret Doge Technique" }
+      { name: "“I'm Out!”", description: "2nd Secret Doge Technique" },
+      { name: "“I'm gonna disconnect you!”", description: "3rd Secret Doge Technique" }
     ],
     relationships: [
       { name: "Faust", id: 1, relation: "Siblings", status: "Rivals" }

@@ -23,7 +23,7 @@ function Wikisth() {
       name: "Doge",
       image: "/assets/wiki/doge.jpg",
       shortDesc: "My IRL Brother !",
-      category: "Friends"
+      category: "Sibling"
     },
     {
       id: 3,
