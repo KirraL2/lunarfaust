@@ -66,6 +66,34 @@ function Wikisth() {
       image: "/assets/wiki/ethan.jpg",
       shortDesc: "The Narrator",
       category: "Friends"
+    },
+    {
+      id: 10,
+      name: "Sol",
+      image: "/assets/wiki/Sol.jpg",
+      shortDesc: "The Enigma",
+      category: "Friends"
+    },
+    {
+      id: 11,
+      name: "Leyrion",
+      image: "/assets/wiki/ley.jpg",
+      shortDesc: "The ",
+      category: "Friends"
+    },
+    {
+      id: 12,
+      name: "Rebirth",
+      image: "/assets/wiki/rebirth.png",
+      shortDesc: "No. 0 Jolliest",
+      category: "Friends"
+    },
+    {
+      id: 13,
+      name: "Ham",
+      image: "/assets/wiki/ham.jpg",
+      shortDesc: "The MOST HALAL",
+      category: "Friends"
     }
   ];
 
@@ -164,6 +192,7 @@ function Wikisth() {
             <section className="recent-updates">
               <h2 className="section-title">Recent Updates</h2>
               <ul className="update-list">
+                <li>Added Northpol members (November 23, 2025)</li>
                 <li>Updated Faust theme, added Ethan (September 13, 2025)</li>
                 <li>Updated Faust profile, added Gabs, Ryu, and Kuro(Haru) (September 12, 2025)</li>
                 <li>Added Faust, Doge, AbysSsian, Kimo and Brick (April 15, 2025)</li>

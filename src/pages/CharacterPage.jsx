@@ -183,6 +183,93 @@ const characterDatabase = {
       "He gave me a scuffed image - Faust", 
       "I suggest we put Ethan in the Iron Maiden and give him a trip to India - Gabby"
     ]
+  },
+  10: {
+    name: "Sol",
+    fullTitle: "The Enigma",
+    aliases: ["Solace - Faust(sometimes)",
+      "Cheol",
+      "Zian",
+      "Arc",
+      "Vex"
+    ],
+    description: "Server owner of Northpol (HE'S SO JOLLY OMG (The FIRST Jolliest))",
+    images: [
+      "/assets/wiki/Sol.jpg"
+    ],
+    abilities: [
+      { name: "Time Stop", description: "things would be nice if time just held still for just a moment" },
+      { name: "Untraceable DNA", description: "😈😈😈😈😈😈😈😈😈😈" }
+    ],
+    relationships: [
+      { name: "Faust", id: 1, relation: "Friends", status: "Yippee" },
+      { name: "Leyrion", id: 11, relation: "Married", status: "Happee" }
+    ],
+    trivia: [
+      "Illegally married to Leyrion",
+      "Illegally married to Re's clone",
+      "He's really good at drawing",
+    ]
+  },
+  11: {
+    name: "Leyrion",
+    fullTitle: "",
+    aliases: [""],
+    description: "",
+    images: [
+      "/assets/wiki/ley.jpg"
+    ],
+    abilities: [
+      { name: "", description: "" }
+    ],
+    relationships: [
+      { name: "Faust", id: 1, relation: "Friends", status: "Yippee" },
+      { name: "Sol", id: 10, relation: "Married", status: "Happee" }
+    ],
+    trivia: [
+      ""
+    ],
+    extra: [
+      ""
+    ]
+  },
+  12: {
+    name: "Rebirth",
+    fullTitle: "The No. 0 Jolliest",
+    aliases: ["N/A"],
+    description: "top 1 jolly king biology",
+    images: [
+      "/assets/wiki/rebirth.png"
+    ],
+    abilities: [
+      { name: "meta brick vision", description: "" },
+      { name: "halal street dribbling", description: "" }
+    ],
+    relationships: [
+      { name: "Faust", id: 1, relation: "Friends", status: "Yippee" }
+    ],
+    trivia: [
+      "Has a girlfriend"
+    ],
+  },
+  13: {
+    name: "Ham",
+    fullTitle: "HALAL",
+    aliases: ["hammy", "sanguine eye", "lazy eye"],
+    description: "gombagombagombagogogogog",
+    images: [
+      "/assets/wiki/ham.jpg"
+    ],
+    abilities: [
+      { name: "king formless", description: "each time i kick someones balls i make them halal" }
+    ],
+    relationships: [
+      { name: "Faust", id: 1, relation: "Friends", status: "Yippee" }
+    ],
+    trivia: [
+      "yeah",
+      "oh that was two hours ago"
+    ],
   }
 };
 
@@ -193,7 +280,10 @@ function CharacterPage() {
   const characterAudio = {
     1: "/assets/sounds/faust-theme.mp3",
     4: "/assets/sounds/abyss-theme.mp3",
-    6: "/assets/sounds/gab-theme.mp3"
+    6: "/assets/sounds/gab-theme.mp3",
+    10: "/assets/sounds/sol-theme.mp3",
+    12: "/assets/sounds/reb-theme.mp3",
+    13: "/assets/sounds/ham-theme.mp3"
   };
 
   if (!character) {
